@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  webservice:
+    build: 'server/.'
+    container_name: webservice
+    volumes:
+      - ./server:/webservice
+      - /webservice/node_modules
+    ports:
+      - '8000:8000'
+    env_file:
+      - 'server/.environment/.dev.env'
+    restart: always
+  web:
+    build: 'client/.'
+    container_name: frontend
+    ports:
+      - '3000:3000'
+    restart: always

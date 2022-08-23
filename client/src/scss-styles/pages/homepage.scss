@@ -1,0 +1,19 @@
+.manage-records-table {
+    color: black;
+    font-size: small;
+    font-weight: 300;
+    line-height: 50px;
+
+    .table-row {
+        margin: 20px;
+    }
+    .heading-name {
+        font-size: small;
+        font-weight: 500;
+    }
+    .image-rounded {
+        padding: 0 2px 3px 2px;
+        height: 30px;
+        width: 30px;
+    }
+}

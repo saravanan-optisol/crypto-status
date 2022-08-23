@@ -1,0 +1,32 @@
+h2 {
+  color: white;
+}
+
+.dashboard_display {
+  margin-top: 40px;
+  .view-btn {
+    font-size: 13px;
+    background-color: white;
+    padding: 7px 13px;
+    color: #000000;
+    border-radius: 20px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    &.active {
+      background-color: rgba(45, 141, 255, 1);
+      color: #ffffff;
+    }
+  }
+}
+
+.dashboard_sort {
+  margin-top: 20px;
+  margin-left: 36px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #a1a1a1;
+  span {
+    color: rgba(45, 141, 255, 1);
+  }
+}

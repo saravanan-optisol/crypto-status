@@ -1,0 +1,51 @@
+.dashboard_details_top {
+  width: 100%;
+  margin-top: 20px;
+  .dashboard {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+  }
+}
+.dashboard-search {
+  background: #efefef;
+  border-radius: 10px;
+  .input-group-text {
+    background: no-repeat;
+    border: none;
+    padding: 0 5px 0 15px;
+  }
+  .form-control {
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 13px;
+    color: #7c7f86;
+  }
+}
+
+.folder-bg {
+  background: #fbfbfb;
+}
+
+.folder-search {
+  .input-group-text {
+    background: none;
+    border: none;
+    padding: 0 15px 0 0;
+  }
+  .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #94a2ab;
+    background: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #94a2ab;
+    font-weight: 300;
+    padding-left: 0;
+    border-radius: 0;
+  }
+}
