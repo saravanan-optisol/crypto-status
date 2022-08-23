@@ -16,7 +16,6 @@ const HomePage = () => {
   }, [lastUpdate]);
 
   useEffect(() => {
-    console.log(environment.socketUrl, 'ENV');
     const socket = io(environment.socketUrl, {
       withCredentials: true,
       extraHeaders: {

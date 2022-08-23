@@ -4,15 +4,12 @@ const coinsSchema = require('../model/coins');
 
 module.exports = {
   updateTopCryptos: async () => {
-    console.log('INVOKED')
     let response = null;
 
     const params = {
       cryptocurrency_type: 'coins',
       limit: 100,
     };
-    console.log(config.api_key, 'api keyyy');
-    console.log(config, 'api urllll');
     const headers = {
       'X-CMC_PRO_API_KEY': config.coin_market_cap.api_key,
     };
@@ -21,7 +18,6 @@ module.exports = {
       config.coin_market_cap.api_url,
       { headers, params }
     );
-      console.log(response, 'RESP');
     if (response) {
       const { data } = response.data;
       let updateData = [];
@@ -48,7 +44,6 @@ module.exports = {
         });
       });
 
-      console.log('_____________')
       const coins = new coinsSchema({ record: updateData });
       await coins.save();
     }
